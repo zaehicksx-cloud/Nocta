@@ -33,11 +33,8 @@ app.use('/v1/', limiter);
 // Health check
 app.get('/', (req, res) => {
     res.json({
-        name: 'Nocta API',
-        version: '1.0.0',
-        status: 'online',
-        note: 'Authentication handled by loader',
-        timestamp: new Date().toISOString()
+        success: true,
+        message: "Beep boop 🤖 backend's awake."
     });
 });
 
